@@ -1,0 +1,7 @@
+<p>----------------------------------</p>
+<label for='username'>
+</label>
+<input type='text' class="form-control" [(ngModel)]='username' (input)='testUsername($event)'>
+You Entered: {{username}}
+<br>
+<button class='btn btn-danger' [disabled]='!prop' (click)='resetUsername()'>Click Me</button>
